@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{9E434ABB-1732-4707-BCE3-8B183942A128}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RelianceSIP</RootNamespace>
+    <AssemblyName>RelianceSIP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RelianceSIP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RelianceSIP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Highcharts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Highcharts.Net.2.0.3\lib\net4.0\Highcharts.dll</HintPath>
+    </Reference>
+    <Reference Include="Highcharts.MVC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Highcharts.Net.2.0.3\lib\net4.0\Highcharts.MVC.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.3.5.8\lib\35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="SVG, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SvgNet.1.0.8\lib\net40\SVG.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="webchart, Version=1.1.1.4, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\webchart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calendar.gif" />
+    <Content Include="calendar.js" />
+    <Content Include="HTMLCalendar.htm" />
+    <Content Include="Images\arrow-search-schem.gif" />
+    <Content Include="Images\blank_space.gif" />
+    <Content Include="Images\btn-newrmf.gif" />
+    <Content Include="Images\btn-reset.gif" />
+    <Content Include="Images\btn-save.gif" />
+    <Content Include="Images\btn-show.gif" />
+    <Content Include="Images\calender_img.jpg" />
+    <Content Include="Images\calendor.gif" />
+    <Content Include="Images\img-feature-linkbg.gif" />
+    <Content Include="Images\reliance-logo.gif" />
+    <Content Include="Images\reliance-mutual-fund.png" />
+    <Content Include="Images\reset.jpg" />
+    <Content Include="Images\rmf-logo.gif" />
+    <Content Include="Images\rupee.png" />
+    <Content Include="Images\save.jpg" />
+    <Content Include="Images\show.jpg" />
+    <Content Include="Images\toplinks01_bg.gif" />
+    <Content Include="Images\txt-relianc-capital-company.gif" />
+    <Content Include="Images\txt-reliance-mutual-fund.gif" />
+    <Content Include="Images\txt-reliance.gif" />
+    <Content Include="Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Images\ui-icons_222222_256x240.png" />
+    <Content Include="Images\ui-icons_454545_256x240.png" />
+    <Content Include="includes\date.js" />
+    <Content Include="includes\dropdown.js" />
+    <Content Include="includes\general.js" />
+    <Content Include="includes\HTML2PDF.js" />
+    <Content Include="includes\jqplot\excanvas.js" />
+    <Content Include="includes\jqplot\excanvas.min.js" />
+    <Content Include="includes\jqplot\jquery.jqplot.js" />
+    <Content Include="includes\jqplot\jquery.jqplot.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.barRenderer.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.barRenderer.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.canvasAxisLabelRenderer.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.canvasAxisLabelRenderer.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.canvasTextRenderer.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.canvasTextRenderer.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.categoryAxisRenderer.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.categoryAxisRenderer.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.cursor.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.cursor.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.dateAxisRenderer.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.dateAxisRenderer.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.enhancedLegendRenderer.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.enhancedLegendRenderer.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.highlighter.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.highlighter.min.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.pointLabels.js" />
+    <Content Include="includes\jqplot\plugins\jqplot.pointLabels.min.js" />
+    <Content Include="includes\jquery-1.10.2.js" />
+    <Content Include="includes\jquery-1.7.1.js" />
+    <Content Include="includes\jquery-1.9.1.js" />
+    <Content Include="includes\jquery-3.7.1.js" />
+    <Content Include="includes\jquery-migrate-1.4.1.min.js" />
+    <Content Include="includes\jquery-ui.css" />
+    <Content Include="includes\jquery-ui.js" />
+    <Content Include="includes\jquery.dependClass-0.1.js" />
+    <Content Include="includes\jquery.ui.core.js" />
+    <Content Include="includes\jquery.ui.datepicker.js" />
+    <Content Include="includes\jquery.ui.widget.js" />
+    <Content Include="includes\jshashtable-2.1_src.js" />
+    <Content Include="includes\percent_bar.js" />
+    <Content Include="includes\SIPCalSheet.css" />
+    <Content Include="includes\style.css" />
+    <Content Include="includes\Styles\jquery-ui.css" />
+    <Content Include="includes\Styles\jquery.jqplot.css" />
+    <Content Include="includes\style_rel.css" />
+    <Content Include="includes\validation.js" />
+    <Content Include="includes\WaterMark\jquery.data.js" />
+    <Content Include="includes\WaterMark\jquery.watermark.js" />
+    <Content Include="includes\WaterMark\jquery.watermark.min.js" />
+    <Content Include="NewExport.js" />
+    <Content Include="NPOIWrite.cs" />
+    <Content Include="percent_bar.js" />
+    <Content Include="rsipcalc.sln" />
+    <Content Include="SIPCalculator.aspx" />
+    <Content Include="UpgradeLog.htm" />
+    <Content Include="UpgradeLog2.htm" />
+    <Content Include="validation.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="charts.vb" />
+    <Compile Include="GraphData.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SIPCalculator.aspx.vb">
+      <DependentUpon>SIPCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIPCalculator.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mssccprj.scc" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\RelianceCalculator.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="NewExport.js.bak" />
+    <Content Include="reliancefinanancecalculatorbugs.xls" />
+    <Content Include="RelianceSIP.xls" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Webbackup.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PDF\" />
+    <Folder Include="temp\" />
+    <Folder Include="WebCharts\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54609/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
