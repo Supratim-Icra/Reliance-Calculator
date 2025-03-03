@@ -8,6 +8,7 @@ Imports NPOI.XSSF.UserModel
 
 ''' <summary>
 ''' Date change to check git conflict management
+''' ccccccccccccccccccccccccc
 ''' bbbbbbbbbbbbbbbbbbbbb
 ''' </summary>
 Module Module1
@@ -765,7 +766,7 @@ z:
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
-        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldn’t be used for the development or implementation of an investment strategy.")
+        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldnï¿½t be used for the development or implementation of an investment strategy.")
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
@@ -1042,7 +1043,7 @@ z:
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
-        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldn’t be used for the development or implementation of an investment strategy.")
+        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldnï¿½t be used for the development or implementation of an investment strategy.")
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
@@ -1159,7 +1160,7 @@ z:
 
         Dim sheet As XSSFSheet = workbook.CreateSheet("STP Report")
         For i As Integer = 0 To 12
-            sheet .SetColumnWidth (i, 20*256)
+            sheet.SetColumnWidth(i, 20 * 256)
         Next
         'Set Header Style
         Dim Style As XSSFCellStyle = workbook.CreateCellStyle()
@@ -1452,7 +1453,7 @@ z:
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
-        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldn’t be used for the development or implementation of an investment strategy.")
+        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldnï¿½t be used for the development or implementation of an investment strategy.")
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
