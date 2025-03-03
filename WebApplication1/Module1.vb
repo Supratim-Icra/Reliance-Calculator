@@ -8,6 +8,7 @@ Imports NPOI.XSSF.UserModel
 
 ''' <summary>
 ''' Date change to check git conflict management
+''' ccccccccccccccccccccccccc
 ''' </summary>
 Module Module1
     Public Function fmt(ByVal s As String) As String
@@ -764,7 +765,7 @@ z:
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
-        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldn’t be used for the development or implementation of an investment strategy.")
+        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldnï¿½t be used for the development or implementation of an investment strategy.")
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
@@ -1041,7 +1042,7 @@ z:
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
-        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldn’t be used for the development or implementation of an investment strategy.")
+        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldnï¿½t be used for the development or implementation of an investment strategy.")
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
@@ -1451,7 +1452,7 @@ z:
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
-        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldn’t be used for the development or implementation of an investment strategy.")
+        Disclaimer.CreateCell(1).SetCellValue("The Calculators/Tools/Planners are designed to assist you in determining the appropriate amount. These Calculators/Tools/Planners alone are not sufficient and shouldnï¿½t be used for the development or implementation of an investment strategy.")
         itrRow = itrRow + 1
 
         Disclaimer = sheet.CreateRow(itrRow)
