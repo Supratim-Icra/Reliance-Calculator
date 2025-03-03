@@ -7,7 +7,7 @@ Imports NPOI.SS.Util
 Imports NPOI.XSSF.UserModel
 
 ''' <summary>
-''' Date change
+''' Date change to check git conflict management
 ''' </summary>
 Module Module1
     Public Function fmt(ByVal s As String) As String

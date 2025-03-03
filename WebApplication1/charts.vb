@@ -14,7 +14,11 @@ Module charts_WebCharts
     Public selectedIndexList As String
     Public retColStartIndex As Integer
 
-
+    ''' <summary>
+    ''' Date change to check git conflict management
+    ''' </summary>
+    ''' <param name="strHTML"></param>
+    ''' <returns></returns>
     Public Function ClearHTMLTags(ByVal strHTML)
         Dim regExObj 'As Regex
         Dim strTagLess
